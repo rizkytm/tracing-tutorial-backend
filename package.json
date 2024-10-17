@@ -1,0 +1,18 @@
+{
+  "name": "node-backend",
+  "version": "1.0.0",
+  "description": "backend server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "akrawiec",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/node": "^8.32.0",
+    "@sentry/profiling-node": "^8.32.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "http": "^0.0.1-security"
+  }
+}
