@@ -1,6 +1,3 @@
-require("./instrument.js");
-
-const Sentry = require("@sentry/node");
 const express = require('express');
 const productsRoute = require('./routes/products');
 const cors = require('cors')
@@ -24,7 +21,6 @@ app.get("/products/debug-sentry", (req, res) => {
     throw new Error("My first Sentry error!");
   });
 
-Sentry.setupExpressErrorHandler(app);
 
 app.use(function onError(err, req, res, next) {
     // The error id is attached to `res.sentry` to be returned
