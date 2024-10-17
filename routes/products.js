@@ -6,11 +6,6 @@ router.get('/', (req, res) => {
 });
 
 router.get('/kitten-mittens', (req, res) => {
-    console.log({
-        title: 'Kitten Mittens',
-        description: "These mittens are a great way to quiet your cat's loud, heavy footsteps.",
-        imgPath: 'img/kitten-mittens.png'
-    });
     res.send({
         title: 'Kitten Mittens',
         description: "These mittens are a great way to quiet your cat's loud, heavy footsteps.",
