@@ -17,14 +17,6 @@ app.get("/products/debug-sentry", (req, res) => {
   throw new Error("My first Sentry error!");
 });
 
-app.use(function onError(err, req, res, next) {
-  // The error id is attached to `res.sentry` to be returned
-  // and optionally displayed to the user for support.
-  console.log("500?");
-  res.statusCode = 500;
-  res.end(res.sentry + "\n");
-});
-
 app.use("/products", productsRoute);
 
 // const server = http.createServer((req, res) => {
